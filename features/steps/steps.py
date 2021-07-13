@@ -22,7 +22,7 @@ def impl(context, element_label, wrt_element_type):
     context.actionwords.w_click_on_element(element_label, wrt_element_type)
     pass
 
-@when(r'W_insert_element "(.*)" "(.*)"')
+@when(r'W_insert_element "(?P<element_type>.*)" "(.*)"')
 def impl(context, element_type, wrt_additional_informations):
     context.actionwords.w_insert_element(element_type, wrt_additional_informations)
     pass
