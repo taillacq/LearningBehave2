@@ -18,7 +18,7 @@ class Actionwords:
 
     def w_insert_element(self, element_type, wrt_additional_informations):
         # TODO: Implement action: "Insérer %s %s" % (element_type, wrt_additional_informations)
-        if element_type == "eftaillacq":
+        if element_type == "etaillacq":
             self._driver.find_element_by_id("username").send_keys(element_type)
         else:
             self._driver.find_element_by_id("password").send_keys(element_type)

@@ -22,12 +22,12 @@ def impl(context, element_label, wrt_element_type):
     context.actionwords.w_click_on_element(element_label, wrt_element_type)
     pass
 
-@when(r'W_insert_element "(?P<element_type>.*)" "(.*)"')
+@when(r'W_insert_element "(.*)" "(.*)"')
 def impl(context, element_type, wrt_additional_informations):
     context.actionwords.w_insert_element(element_type, wrt_additional_informations)
     pass
 
-@then(r'T_open_session "(?P<session>.*)" "(.*)"')
+@then(r'T_open_session "(.*)" "(.*)"')
 def impl(context, session, wrt_additional_informations = ""):
     context.actionwords.t_open_session(session, wrt_additional_informations)
     pass
